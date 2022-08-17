@@ -1,3 +1,6 @@
-from django.shortcuts import render
+from django.views.generic import ListView
+from django.http import HttpResponse
 
-# Create your views here.
+def hey(request):
+    f = 'hey now'
+    return HttpResponse(f)
